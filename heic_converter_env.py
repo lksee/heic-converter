@@ -85,7 +85,7 @@ class HEICConverter:
     def setup_ui(self):
         """UI 구성 요소 설정"""
         self.root = tk.Tk()
-        self.root.title("HEIC 이미지 변환기 v2.0")
+        self.root.title("HEIC 이미지 변환기 v1.0")
         self.root.geometry("1400x900")
         self.root.minsize(1200, 800)
         
@@ -117,7 +117,7 @@ class HEICConverter:
         )
         self.version_label = ttk.Label(
             self.title_frame,
-            text="v2.0 - 고성능 배치 변환",
+            text="v1.0 - 고성능 배치 변환",
             style='Info.TLabel'
         )
         
