@@ -1,0 +1,405 @@
+# HEIC 이미지 변환기 - .gitignore
+
+# ===== Python =====
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+Pipfile.lock
+
+# poetry
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+poetry.lock
+
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+pdm.lock
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+#   in version control.
+#   https://pdm.fming.dev/#use-with-ide
+.pdm.toml
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+heic_env/
+heic_converter_env/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# ===== IDE and Editors =====
+# PyCharm
+#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+#  be added to the global gitignore or merged into this file.  For a more nuclear
+#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
+.idea/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*~
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ===== OS Generated Files =====
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===== Application Specific =====
+# HEIC/HEIF 파일 (테스트용 제외)
+*.heic
+*.heif
+*.HEIC
+*.HEIF
+# 단, 테스트 샘플 파일은 포함
+!test_samples/*.heic
+!test_samples/*.heif
+
+# 변환된 이미지 파일들
+*.jpg
+*.jpeg
+*.png
+*.webp
+# 단, 문서용 스크린샷과 아이콘은 포함
+!screenshots/*.png
+!screenshots/*.jpg
+!assets/*.png
+!assets/*.jpg
+!assets/*.ico
+!icon.ico
+!logo.png
+
+# 사용자 설정 파일
+config.json
+settings.ini
+user_preferences.json
+
+# 로그 파일
+*.log
+logs/
+log/
+
+# 임시 파일들
+temp/
+tmp/
+*.tmp
+*.temp
+
+# 백업 파일들
+*.bak
+*.backup
+*~
+
+# 캐시 파일들
+.cache/
+cache/
+*.cache
+
+# ===== PyInstaller Build Files =====
+# PyInstaller 관련 파일들
+*.spec
+build/
+dist/
+__pycache__/
+
+# auto-py-to-exe 생성 파일들
+output/
+
+# NSIS 설치 프로그램 파일들
+*.nsi
+*.exe
+# 단, 최종 배포용 exe는 releases 폴더에 별도 관리
+!releases/*.exe
+
+# ===== Documentation =====
+# Sphinx build
+_build/
+_static/
+_templates/
+
+# MkDocs
+site/
+
+# ===== Database =====
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+
+# ===== Certificates and Keys =====
+# 개인키와 인증서
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+
+# ===== Test Files =====
+# 테스트 결과 파일
+test_results/
+test_output/
+.coverage
+htmlcov/
+
+# pytest
+.pytest_cache/
+
+# tox
+.tox/
+
+# ===== Deployment =====
+# Docker
+Dockerfile.prod
+docker-compose.prod.yml
+.dockerignore
+
+# Heroku
+Procfile
+
+# ===== Custom =====
+# 프로젝트별 커스텀 제외 파일들
+TODO.md
+NOTES.md
+.personal_notes.txt
+
+# 개발자 개인 설정
+.local_config.py
+.dev_settings.json
+
+# 성능 측정 결과
+benchmarks/
+profiling/
+
+# 예제 파일들 (대용량)
+examples/large_files/
+samples/big_images/
+
+# 문서 초안
+draft_docs/
+*.draft.md
+
+# 백업된 코드
+*.py.bak
+old_versions/
+
+# ===== 보안 관련 =====
+# API 키와 시크릿
+.secrets
+secrets.json
+api_keys.txt
+.env.local
+.env.production
+
+# 사용자 데이터
+user_data/
+uploads/
+downloads/
+
+# ===== 특별 주의사항 =====
+# 실수로 커밋될 수 있는 대용량 파일들
+*.zip
+*.tar.gz
+*.rar
+*.7z
+# 단, 문서용 압축 파일은 제외
+!docs/*.zip
+!assets/*.zip
+
+# 동영상 파일들
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# 오디오 파일들  
+*.mp3
+*.wav
+*.flac
+
+# End of .gitignore
